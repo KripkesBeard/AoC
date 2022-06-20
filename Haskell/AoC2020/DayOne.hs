@@ -17,18 +17,24 @@ module AoC2020.DayOne (dayOneAnswerOne, dayOneAnswerTwo) where
 -- 2 doesn't need to traverse the list as many times as this does.
 -}
 
-f :: String -> [Int]
-f = fmap read . lines
+toInts :: String -> [Int]
+toInts = fmap read . lines
 
-g :: [Int] -> [Int]
-g xs = [x * y | x <- xs, y <- xs, x + y == 2020 && x /= y]
+getProduct :: [Int] -> [Int]
+getProduct xs = [x * y | x <- xs, y <- xs, x + y == 2020 && x /= y]
 
+-- | Gets the answer to the first question
+-- 
+-- Answer to my data is 158916
 dayOneAnswerOne :: String -> Int
-dayOneAnswerOne = head . g . f
+dayOneAnswerOne = head . getProduct . toInts
 
-g' :: [Int] -> [Int]
-g' xs = [x * y * z | x <- xs, y <- xs, z <- xs, x + y + z == 2020 && x /= y && y /= z && z /= x]
+getProduct' :: [Int] -> [Int]
+getProduct' xs = [x * y * z | x <- xs, y <- xs, z <- xs, x + y + z == 2020 && x /= y && y /= z && z /= x]
 
+-- | Gets the answer to the second question
+-- 
+-- Answer to my data is 165795564
 dayOneAnswerTwo :: String -> Int
-dayOneAnswerTwo = head . g' . f
+dayOneAnswerTwo = head . getProduct' . toInts
 
