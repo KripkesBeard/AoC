@@ -1,1 +1,4 @@
+*.exe
+/Haskell/build
 /input
+/Rust/aoc/target
