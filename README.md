@@ -1,7 +1,7 @@
 # Advent of Code
 
-Here is a repo of my Advent of Code solutions. Right now it's only Haskell, but I plan on doing
-more whenever I have time, as is tradition.
+Here is a repo of my Advent of Code solutions, right now with a 
+small amount of Haskell and the skeleton for Rust.
 
-[Haskell](https://github.com/KripkesBeard/AoC/tree/master/Haskell)
-
+[Haskell](https://github.com/KripkesBeard/AoC/tree/master/Haskell), 
+[Rust](https://github.com/KripkesBeard/AoC/tree/master/Rust)

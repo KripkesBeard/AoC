@@ -1,6 +1,6 @@
 module AoC2015.Run (run) where
 
-import AoC2015.DayOne (dayOneAnswerOne)
+import AoC2015.DayOne as D1 (dayOneAnswerOne)
 
 -- | Calculates and outputs the answers for each day in the 2015 puzzles.
 run :: IO ()
@@ -11,7 +11,7 @@ run = do
 
     --Day One
     dayOneText <- readFile "../input/2015/input1.txt"
-    putStrLn $ "Day 1\n\tProblem 1: " <> show (dayOneAnswerOne dayOneText) 
+    putStrLn $ "Day 1\n\tProblem 1: " <> show (D1.dayOneAnswerOne dayOneText) 
 
     --Format end of section
     putStrLn ""

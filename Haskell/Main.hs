@@ -7,6 +7,7 @@ import AoC2018.Run as AoC2018 (run)
 import AoC2019.Run as AoC2019 (run)
 import AoC2020.Run as AoC2020 (run)
 import AoC2021.Run as AoC2021 (run)
+import AoC2022.Run as AoC2022 (run)
 
 main :: IO ()
 main = do
@@ -18,3 +19,4 @@ main = do
     AoC2019.run
     AoC2020.run
     AoC2021.run
+    AoC2022.run
