@@ -10,8 +10,5 @@ run = do
     putStrLn "The answers to 2020 are:"
 
     --Day One
-    dayOneText <- readFile "../input/2020/input1.txt"
+    dayOneText <- readFile "../../input/2020/input1.txt"
     putStrLn $ "  Day 1\n\tProblem 1: " <> show (D1.dayOneAnswerOne dayOneText) <> "\n\tProblem 2: " <> show (D1.dayOneAnswerTwo dayOneText)
-
-    --Format end of section
-    putStrLn ""

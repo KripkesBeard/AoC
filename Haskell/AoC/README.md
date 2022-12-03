@@ -8,12 +8,10 @@ called Run which calls the solutions on the input data for each day.
 Main strings all of these together. 
 
 I did not include my input data, so in order to run this on your own, 
-you need to create a directory under the AoC directory titled /input/ 
+you need to create a directory in the main gitrepo directory titled /input/ 
 which contains a subdirectory for each year, each of which contains the 
 input in the form of text files named input\<n\>.txt for each day n. 
 Otherwise, you'll need to change the way the Run.hs files read the input
 according to whatever structure you set up.
 
-To build: ghc -odir build -hidir build -o aoc Main.hs
-
-(I'll switch to cabal at some point)
+Building with cabal should work.

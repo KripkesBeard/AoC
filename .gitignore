@@ -1,4 +1,3 @@
-*.exe
-/Haskell/build
+/Haskell/AoC/dist-newstyle
 /input
 /Rust/aoc/target

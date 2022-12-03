@@ -1,0 +1,48 @@
+cabal-version:      2.4
+name:               AoC
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Peter Fortin
+maintainer:         32374800+KripkesBeard@users.noreply.github.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+                    README.md
+
+executable AoC
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: AoC2015.DayOne
+                   AoC2015.Run
+                   AoC2016.Run
+                   AoC2017.Run
+                   AoC2018.Run
+                   AoC2019.Run
+                   AoC2020.DayOne
+                   AoC2020.Run
+                   AoC2021.DayOne
+                   AoC2021.DayTwo
+                   AoC2021.Run
+                   AoC2022.DayOne
+                   AoC2022.DayTwo
+                   AoC2022.Run
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.3.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
