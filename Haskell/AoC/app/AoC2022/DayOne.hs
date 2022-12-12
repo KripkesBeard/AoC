@@ -1,6 +1,7 @@
 module AoC2022.DayOne (dayOneAnswerOne, dayOneAnswerTwo) where
 
 import Data.List (sort)
+import Data.List.Split (splitOn)
 
 
 
@@ -13,13 +14,9 @@ readToInt x
   | x == ""  = 0
   | otherwise = read x
 
--- | Splits a list of ints into a list of sublists, pivoting on 0
--- | This is bad and I'm surprised there isn't a standard library function for it.
+-- | Splits a list of ints into a list of sublists, splitting at 0
 splitAtZero :: [Int] -> [[Int]]
-splitAtZero [] = []
-splitAtZero (x:xs) 
-  | x == 0    = splitAtZero xs
-  | otherwise = takeWhile (/= 0) (x:xs) : splitAtZero (dropWhile (/= 0) xs)
+splitAtZero = splitOn [0]
 
 -- | Lines the input, read it into a list of ints separated by zeros, split into a list of lists, sum those interior lists, take the largest value
 -- 

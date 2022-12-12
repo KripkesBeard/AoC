@@ -10,5 +10,5 @@ run = do
     putStrLn "The answers to 2015 are:"
 
     --Day One
-    dayOneText <- readFile "../../input/2015/input1.txt"
+    dayOneText <- readFile "input/2015/input1.txt"
     putStrLn $ "  Day 1\n\tProblem 1: " <> show (D1.dayOneAnswerOne dayOneText)

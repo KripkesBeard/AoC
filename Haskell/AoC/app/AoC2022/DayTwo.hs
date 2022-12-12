@@ -1,6 +1,6 @@
 module AoC2022.DayTwo (dayTwoAnswerOne, dayTwoAnswerTwo) where
 
-import Control.Applicative as Ap
+import Control.Applicative
 
 {- 
 -- A more CS style answer would involve using a dictonary to map letter inputs to int values
@@ -43,7 +43,7 @@ calcScore x y
 -- 
 -- Answer to my data is 13809
 dayTwoAnswerOne :: String -> Int
-dayTwoAnswerOne = sum . Ap.liftA2 (zipWith calcScore) grabFirst grabSecond . lines 
+dayTwoAnswerOne = sum . liftA2 (zipWith calcScore) grabFirst grabSecond . lines 
 
 
 -- Problem 2
@@ -77,4 +77,4 @@ calcScore' x y
 -- 
 -- Answer to my data is 12316
 dayTwoAnswerTwo :: String -> Int
-dayTwoAnswerTwo = sum . Ap.liftA2 (zipWith calcScore') grabFirst grabSecond . lines 
+dayTwoAnswerTwo = sum . liftA2 (zipWith calcScore') grabFirst grabSecond . lines 
