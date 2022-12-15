@@ -1,5 +1,6 @@
 module AoC2022.DayOne (dayOneAnswerOne, dayOneAnswerTwo) where
 
+import Data.Text (Text)
 import Data.List (sort)
 import Data.List.Split (splitOn)
 
