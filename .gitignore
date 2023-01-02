@@ -1,4 +1,2 @@
-/Haskell/AoC/dist-newstyle
-/Haskell/AoC/input
-/input
-/Rust/aoc/target
+dist-newstyle
+input

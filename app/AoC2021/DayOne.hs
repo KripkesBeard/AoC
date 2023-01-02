@@ -1,3 +1,5 @@
+{-# LANGUAGE TypeApplications #-}
+
 module AoC2021.DayOne (dayOneAnswerOne, dayOneAnswerTwo) where
 
 {- AoC 2021 Day 1
@@ -21,7 +23,7 @@ module AoC2021.DayOne (dayOneAnswerOne, dayOneAnswerTwo) where
 
 -- | Turn input into list of ints 
 scanNums :: String -> [Int]
-scanNums = fmap (\x -> read x :: Int) . words
+scanNums = fmap (read @Int) . words
 
 -- | Masks 1 or 0 according to wether or not the first number is smaller than the second number
 checkInc :: Ord a => a -> a -> Int

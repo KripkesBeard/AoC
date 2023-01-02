@@ -1,7 +1,16 @@
-# Advent of Code
+# Haskell AoC
 
-Here is a repo of my Advent of Code solutions, right now with a 
-small amount of Haskell and the skeleton for Rust.
+This is a collection of solutions to the Advent of Code in Haskell.
 
-[Haskell](https://github.com/KripkesBeard/AoC/tree/master/Haskell/AoC), 
-[Rust](https://github.com/KripkesBeard/AoC/tree/master/Rust/aoc)
+Each year subdirectory includes modules for each individual day which
+solve those days' first and second problems. They also include a module 
+called Run which calls the solutions on the input data for each day.
+Main strings all of these together. 
+
+I did not include my input data, so in order to run this on your own, 
+you need to create a directory titled /input/ which contains a subdirectory
+for each year, each of which contains the input in the form of text files 
+named input\<n\>.txt for each day n. Otherwise, you'll need to change the way
+the Run.hs files read the input according to whatever structure you set up.
+
+Building with cabal should work.
